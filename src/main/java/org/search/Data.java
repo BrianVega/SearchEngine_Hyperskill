@@ -3,6 +3,13 @@ package org.search;
 import org.search.Enums.Strategies;
 
 public class Data {
+    /*
+    *  The following three parameters represents each register of the loaded data
+    *  therefore:
+    *  firstParameter  -> name
+    *  secondParameter -> surname
+    *  thirdParameter  -> address
+    */
     private String firstParameter = "";
     private String secondParameter = "";
     private String thirdParameter = "";
