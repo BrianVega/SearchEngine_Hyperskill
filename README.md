@@ -7,6 +7,7 @@ This is a simple search engine application implemented in Java. The application 
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Usage](#usage)
 - [Application Menu](#application-menu)
 - [Architecture](#architecture)
 
@@ -33,6 +34,26 @@ These instructions will help you set up and run the project on your local machin
     ```bash
     mvn clean install
     ```
+
+## Usage
+1. [Load Data](#load-data).
+2. [Application Menu](#application-menu).
+
+### Load Data
+1. Run the program by passing a CLI argument that corresponds to the name of the file in plain text format that will serve as input for load the data.
+- 1.1 The CLI argument has the following syntax: **--data <*value*>** where value corresponds to the location where the input file is located.
+- 1.2 The input file needs to meet the required input standards as shown in the [Sample Input File](#sample-input-file).    
+
+#### Sample Input File
+##### text.txt
+Dwight Joseph djo@gmail.com  
+Rene Webb webb@gmail.com  
+Katie Jacobs  
+Erick Harrington harrington@gmail.com  
+Myrtle Medina  
+Erick Burgess  
+(...)  
+_<*name*> <*surname*> <*email*>_
 
 ### Application Menu
 
@@ -73,4 +94,3 @@ The project is structured as follows:
   - **Models.Strategies**: Contains implementations of the different search strategies (`All`, `Any`, `None`) and the `StrategyFactory` class.
   - **UI**: Handles user interactions.
   - **IO**: Handles input and output operations, including validation.
-
