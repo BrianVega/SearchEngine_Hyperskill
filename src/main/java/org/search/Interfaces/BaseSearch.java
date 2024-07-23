@@ -22,7 +22,7 @@ public abstract class BaseSearch {
         fillUniqueRegisters(uniqueRegisters, coincidences);
 
         for (int register : uniqueRegisters) {
-            String current = data.get(register).containsDataStrategy(searchTokens, getStrategy());
+            String current = data.get(register).findInData(searchTokens, getStrategy());
             if (current != null && !current.isEmpty()) {
                 result.add(current);
             }

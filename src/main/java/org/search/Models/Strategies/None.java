@@ -14,7 +14,7 @@ public class None implements Strategy {
     public List<String> search(List<Data> dataList, String[] searchTokens, SearchEngine searchEngine) {
         List<String> results = new ArrayList<>();
         for(Data d : dataList){
-               String current = d.containsDataStrategy(searchTokens, Strategies.NONE);
+               String current = d.findInData(searchTokens, Strategies.NONE);
                if(current != null && !current.isEmpty()) {
                    results.add(current);
                }

@@ -47,7 +47,7 @@ public class Data {
         }
     }
 
-    public String containsDataStrategy(String[] searchTokens, Strategies strategy){
+    public String findInData(String[] searchTokens, Strategies strategy){
         return switch (strategy) {
             case ALL -> allStrategy(searchTokens);
             case ANY -> anyStrategy(searchTokens);
